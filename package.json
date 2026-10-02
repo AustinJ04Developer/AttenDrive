@@ -1,0 +1,22 @@
+{
+  "name": "placement-drive-attendance-system",
+  "version": "1.0.0",
+  "description": "Placement Drive Attendance System for College Placement Cells",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "build": "npm run build:client",
+    "start": "cd server && npm start",
+    "sync-indexes": "cd server && npm run sync-indexes",
+    "seed": "cd server && npm run seed",
+    "test": "cd server && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "author": "",
+  "license": "MIT"
+}
